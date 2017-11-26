@@ -1,4 +1,4 @@
-package com.example.web;
+package com.projectdijkstra.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
