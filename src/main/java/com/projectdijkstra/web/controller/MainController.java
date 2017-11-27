@@ -8,6 +8,21 @@ public class MainController {
 
   @GetMapping("/")
   public String index() {
-    return "index";
+    return this.about();
+  }
+
+  @GetMapping("/algorithms")
+  public String algorithms() {
+    return "algorithms";
+  }
+
+  @GetMapping("/about")
+  public String about() {
+    return "about";
+  }
+
+  @GetMapping("/serp_task")
+  public String serpTask() {
+    return "serp_task";
   }
 }
