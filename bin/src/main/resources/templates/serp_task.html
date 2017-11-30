@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Project Dijkstra</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<body>
+<div th:replace="fragments :: header"></div>
+<div class="container">
+	<div class="page-header">
+		<h1>全探索の問題一覧</h1>
+	</div>
+	<div class="container">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>コンテスト</th>
+					<th>問題</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr onclick="window.open('https://arc001.contest.atcoder.jp/tasks/arc001_1');">
+					<td>AtCoder Regular Contest 001</td>
+					<td>A</td>
+				</tr>
+				<tr onclick="window.open('https://arc001.contest.atcoder.jp/tasks/arc001_2');">
+					<td>AtCoder Regular Contest 001</td>
+					<td>B</td>
+				</tr>
+				<tr onclick="window.open('https://arc001.contest.atcoder.jp/tasks/arc001_3');">
+					<td>AtCoder Regular Contest 001</td>
+					<td>C</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
+<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
