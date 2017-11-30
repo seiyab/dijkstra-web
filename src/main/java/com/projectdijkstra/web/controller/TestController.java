@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.projectdijkstra.entity.Test;
+import com.projectdijkstra.model.Test;
 
 @Controller
 public class TestController {
@@ -18,14 +18,14 @@ public class TestController {
   }
 
   /*
-   *
+   * パラメータありのGETリクエスト
    */
   @RequestMapping(value = "/getParam")
   @ResponseBody
-  public String getParam(@RequestParam String algo, Test testmodel) {
-    /*
-     * testmodel.addAttribute("modelFoo", algo); testmodel.addAttribute("modelBar", url);
-     */
-    return algo;
+  public String getParam(@RequestParam String algo, @RequestParam String url, Test testmodel) {
+    Test model = new Test(algo, url);
+    return model.toStr();
   }
+
+
 }

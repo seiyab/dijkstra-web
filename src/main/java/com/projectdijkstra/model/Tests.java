@@ -1,4 +1,4 @@
-package com.projectdijkstra.entity;
+package com.projectdijkstra.model;
 
 import java.util.ArrayList;
 import java.util.Collections;

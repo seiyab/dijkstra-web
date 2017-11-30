@@ -1,4 +1,4 @@
-package com.projectdijkstra.entity;
+package com.projectdijkstra.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -22,6 +22,9 @@ public class Test {
     setUrl(url);
   }
 
+  public String toStr() {
 
+    return "algo: " + this.algo + ", url: " + this.url;
+  }
 
 }
