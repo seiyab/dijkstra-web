@@ -22,3 +22,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+### application-properties ###
+src/main/resources/application-develop.properties
+src/main/resources/application-product.properties
