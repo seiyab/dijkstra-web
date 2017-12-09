@@ -22,17 +22,9 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr onclick="window.open('https://arc001.contest.atcoder.jp/tasks/arc001_1');">
-					<td>AtCoder Regular Contest 001</td>
-					<td>A</td>
-				</tr>
-				<tr onclick="window.open('https://arc001.contest.atcoder.jp/tasks/arc001_2');">
-					<td>AtCoder Regular Contest 001</td>
-					<td>B</td>
-				</tr>
-				<tr onclick="window.open('https://arc001.contest.atcoder.jp/tasks/arc001_3');">
-					<td>AtCoder Regular Contest 001</td>
-					<td>C</td>
+				<tr th:each="task : ${tasks}" th:onclick="'window.open(\'' + ${task.url} + '\')'">
+					<td th:text="${task.contest}"/>
+					<td th:text="${task.task}"/>
 				</tr>
 			</tbody>
 		</table>
