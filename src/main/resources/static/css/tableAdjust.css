@@ -7,7 +7,7 @@
     width: 35%;
   }
 
-  th.question {
+  th.task {
     width: 65%;
   }
 }
@@ -18,7 +18,7 @@
     width: 30%;
   }
 
-  th.question {
+  th.task {
     width: 70%;
   }
 }
@@ -29,7 +29,7 @@
     width: 25%;
   }
 
-  th.question {
+  th.task {
     width: 75%;
   }
 }
@@ -40,7 +40,7 @@
     width: 25%;
   }
 
-  th.question {
+  th.task {
     width: 75%;
   }
 }
