@@ -5,6 +5,7 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link href="/css/tableAdjust.css" th:href="@{/css/tableAdjust.css}" rel="stylesheet"></link>
 </head>
 
 <body>
@@ -17,8 +18,8 @@
 		<table class="table table-hover">
 			<thead>
 				<tr>
-					<th>コンテスト</th>
-					<th>問題</th>
+					<th class="contest">コンテスト</th>
+					<th class="task">問題</th>
 				</tr>
 			</thead>
 			<tbody>
