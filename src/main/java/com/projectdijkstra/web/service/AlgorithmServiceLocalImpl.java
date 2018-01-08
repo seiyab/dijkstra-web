@@ -1,9 +1,11 @@
 package com.projectdijkstra.web.service;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import com.projectdijkstra.web.model.Algorithm;
 
 @Service
+@Profile("local")
 public class AlgorithmServiceLocalImpl implements AlgorithmService {
 
   @Override
