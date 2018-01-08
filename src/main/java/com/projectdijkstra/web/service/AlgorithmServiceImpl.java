@@ -10,7 +10,7 @@ import com.projectdijkstra.web.model.Algorithm;
 
 @Service
 @Profile("develop")
-public class AlgorithmServiceImpl {
+public class AlgorithmServiceImpl implements AlgorithmService {
 
   private final RestTemplate restTemplate = new RestTemplate();
 
