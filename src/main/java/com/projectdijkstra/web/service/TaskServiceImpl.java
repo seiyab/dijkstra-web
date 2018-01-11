@@ -12,7 +12,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import com.projectdijkstra.web.model.Task;
 
 @Service
-@Profile("develop")
+@Profile({"develop", "product"})
 public class TaskServiceImpl implements TaskService {
 
   private final RestTemplate restTemplate = new RestTemplate();
