@@ -21,7 +21,7 @@ public class MainController {
 
   @GetMapping("/")
   public String index() {
-    return this.about();
+    return this.algorithms();
   }
 
   @GetMapping("/algorithms")
