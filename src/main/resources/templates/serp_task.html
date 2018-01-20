@@ -14,7 +14,12 @@
 	<div class="page-header">
 		<h1 th:text="${algorithm.name} + 'の問題一覧'"></h1>
 	</div>
-	<div class="container">
+	<div class="alert alert-info" th:if="${tasks.size()} == 0">
+		<span th:text="${algorithm.name} + 'の問題はまだ登録されていません。'"></span>
+		<br/>
+		<a href="/algorithms">アルゴリズム一覧へ</a>
+	</div>
+	<div class="container" th:if="${tasks.size()} > 0">
 		<table class="table table-hover">
 			<thead>
 				<tr>
