@@ -1,5 +1,6 @@
 package com.projectdijkstra.web.controller;
 
+import java.util.Arrays;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,7 +26,14 @@ public class MainController {
   }
 
   @GetMapping("/algorithms")
-  public String algorithms() {
+  public String algorithms(Model model) {
+	Algorithm[] algorithms = new Algorithm[2];
+	algorithms[0] = algorithmService.findAlgorithmByAlgorithmId(1);
+	algorithms[1] = algorithmService.findAlgorithmByAlgorithmId(2);
+	
+
+	model.addAttribute("algorithms", algorithms);
+	  
     return "algorithms";
   }
 
