@@ -27,13 +27,8 @@ public class MainController {
 
   @GetMapping("/algorithms")
   public String algorithms(Model model) {
-	Algorithm[] algorithms = new Algorithm[2];
-	algorithms[0] = algorithmService.findAlgorithmByAlgorithmId(1);
-	algorithms[1] = algorithmService.findAlgorithmByAlgorithmId(2);
-	
-
+	List<Algorithm> algorithms = algorithmService.findAlgorithmList();
 	model.addAttribute("algorithms", algorithms);
-	  
     return "algorithms";
   }
 
