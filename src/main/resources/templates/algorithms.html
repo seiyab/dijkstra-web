@@ -15,7 +15,7 @@
 	</div>
 	<div class="list-group">
 	  <p class="list-group-item list-group-item-action" th:each="algorithm : ${algorithms}">
-	    <a th:text="${algorithm.name}" th:href="@{/serp_task(algorithm_id=${algorithm.algorithmId	})}"/>
+	    <a th:text="${algorithm.name}" th:href="@{/serp_task(algorithm_id=${algorithm.algorithmId})}"/>
 	  </p>
 	</div>
 </div>
