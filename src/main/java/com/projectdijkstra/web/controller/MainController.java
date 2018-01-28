@@ -20,8 +20,8 @@ public class MainController {
   AlgorithmService algorithmService;
 
   @GetMapping("/")
-  public String index() {
-    return this.algorithms();
+  public String index(Model model) {
+    return this.algorithms(model);
   }
 
   @GetMapping("/algorithms")
