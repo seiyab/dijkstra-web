@@ -13,10 +13,8 @@
 	<div class="page-header">
 		<h1>アルゴリズムから問題を探す</h1>
 	</div>
-	<div class="list-group">
-	  <p class="list-group-item list-group-item-action" th:each="algorithm : ${algorithms}">
-	    <a th:text="${algorithm.name}" th:href="@{/serp_task(algorithm_id=${algorithm.algorithmId})}"/>
-	  </p>
+	<div class="list-group" th:each="algorithm : ${algorithms}">
+	  <a th:text="${algorithm.name}" th:href="@{/serp_task(algorithm_id=${algorithm.algorithmId})}"/>
 	</div>
 </div>
 <script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
