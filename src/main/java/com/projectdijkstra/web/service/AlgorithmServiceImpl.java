@@ -12,7 +12,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import com.projectdijkstra.web.model.Algorithm;
 
 @Service
-@Profile("develop")
+@Profile({"develop", "product"})
 public class AlgorithmServiceImpl implements AlgorithmService {
 
   private final RestTemplate restTemplate = new RestTemplate();
