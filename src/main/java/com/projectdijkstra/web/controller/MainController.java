@@ -25,7 +25,9 @@ public class MainController {
   }
 
   @GetMapping("/algorithms")
-  public String algorithms() {
+  public String algorithms(Model model) {
+    List<Algorithm> algorithms = algorithmService.findAlgorithmList();
+    model.addAttribute("algorithms", algorithms);
     return "algorithms";
   }
 

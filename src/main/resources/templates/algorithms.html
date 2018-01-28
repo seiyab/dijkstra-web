@@ -14,9 +14,7 @@
 		<h1>アルゴリズムから問題を探す</h1>
 	</div>
 	<div class="list-group">
-	  <a class="list-group-item list-group-item-action" href="/serp_task">全探索</a>
-	  <a class="list-group-item list-group-item-action" href="/serp_task">動的計画法</a>
-	  <a class="list-group-item list-group-item-action" href="/serp_task">二分探索</a>
+	  <a th:each="algorithm : ${algorithms}" class="list-group-item" th:text="${algorithm.name}" th:href="@{/serp_task(algorithm_id=${algorithm.algorithmId})}"></a>
 	</div>
 </div>
 <script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
