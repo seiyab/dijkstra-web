@@ -1,0 +1,13 @@
+jobs:
+  test:
+    image: deployer
+    requires: [~pr]
+    steps:
+      - test: mvn clean test
+  deploy:
+    image: deployer
+    requires: [~commit]
+    steps:
+      - build: mvn clean package
+      - deliver: scp target/dijkstra-web.jar target:jar/
+      - restart: ssh target /usr/bin/systemctl restart dijkstra-web.service
