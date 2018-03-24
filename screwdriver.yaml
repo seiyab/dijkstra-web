@@ -8,6 +8,7 @@ jobs:
     image: deployer
     requires: [~commit]
     steps:
+      - setting: cp /home/deployer/application-properties.yaml src/main/resources/
       - build: mvn clean package
       - deliver: scp target/dijkstra-web.jar target:jar/
       - restart: ssh target /usr/bin/systemctl restart dijkstra-web.service
