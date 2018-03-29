@@ -4,7 +4,7 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: concourse-registry:5000/deployable
+    repository: concourse-registry:5000/deployable:root
     insecure_registries: [ "concourse-registry:5000" ]
 
 inputs:
