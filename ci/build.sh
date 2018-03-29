@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cp /home/deployer/application-product.yaml repo/src/main/resources/
+mvn clean package -f repo/pom.xml -Pconcourse
 
-mvn clean package -f repo/pom.xml
-
-mv repo/target/dijkstra-web.jar jar/
+mv ./target/dijkstra-web.jar jar/
