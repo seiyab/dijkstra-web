@@ -72,7 +72,7 @@
 			<build>
 				<directory>./target</directory>
 			</build>
-		<profile>
+        </profile>
 	</profiles>
 
 </project>
