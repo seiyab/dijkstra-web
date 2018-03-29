@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 cp /home/deployer/application-product.yaml repo/src/main/resources/
 
