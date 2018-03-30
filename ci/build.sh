@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mvn clean package -f repo/pom.xml -Pconcourse
+mvn clean package -f repo/pom.xml
 
-mv ./target/dijkstra-web.jar jar/
+mv repo/target/dijkstra-web.jar jar/

@@ -65,14 +65,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<profiles>
-		<profile>
-			<id>concourse</id>
-			<build>
-				<directory>./target</directory>
-			</build>
-        </profile>
-	</profiles>
-
 </project>
