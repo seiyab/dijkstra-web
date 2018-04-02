@@ -10,6 +10,7 @@ image_resource:
 
 inputs:
 - name: jar
+- name: repo
 
 run:
   path: repo/ci/deploy.sh
