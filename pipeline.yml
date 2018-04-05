@@ -3,7 +3,7 @@ resources:
     type: git
     source:
      uri: https://github.com/seiyab/dijkstra-web.git
-     branch: feature/ci-concourse
+     branch: master
 
 jobs:
   - name: deploy-web
