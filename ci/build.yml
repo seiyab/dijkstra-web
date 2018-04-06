@@ -1,0 +1,17 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: concourse-registry:5000/deployable
+    insecure_registries: [ "concourse-registry:5000" ]
+
+inputs:
+- name: repo
+
+outputs:
+- name: jar
+
+run:
+  path: repo/ci/build.sh

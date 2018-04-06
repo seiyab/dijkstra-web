@@ -1,0 +1,17 @@
+resources:
+  - name: repo
+    type: git
+    source:
+     uri: https://github.com/seiyab/dijkstra-web.git
+     branch: master
+
+jobs:
+  - name: deploy-web
+    public: true
+    plan:
+      - get: repo
+        trigger: true
+      - task: build
+        file: repo/ci/build.yml
+      - task: deploy
+        file: repo/ci/deploy.yml
