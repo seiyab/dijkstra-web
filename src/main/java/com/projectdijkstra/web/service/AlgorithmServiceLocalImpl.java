@@ -18,7 +18,13 @@ public class AlgorithmServiceLocalImpl implements AlgorithmService {
   @Override
   public List<Algorithm> findAlgorithmList() {
     List<Algorithm> algorithms = new LinkedList<>();
-    algorithms.add(Algorithm.builder().algorithmId(1).name("アルゴリズム").build());
+    algorithms.add(Algorithm.builder().algorithmId(1).name("アルゴリズム1").build());
+    algorithms.add(Algorithm.builder().algorithmId(2).name("アルゴリズム2").build());
+    algorithms.add(Algorithm.builder().algorithmId(3).name("アルゴリズム3").build());
+    algorithms.add(Algorithm.builder().algorithmId(4).name("アルゴリズム4").build());
+    algorithms.add(Algorithm.builder().algorithmId(5).name("アルゴリズム5").build());
+    algorithms.add(Algorithm.builder().algorithmId(6).name("アルゴリズム6").build());
+    algorithms.add(Algorithm.builder().algorithmId(7).name("アルゴリズム7").build());
     return algorithms;
   }
 }
