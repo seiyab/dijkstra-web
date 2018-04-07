@@ -14,7 +14,7 @@
 		<h1>アルゴリズムから問題を探す</h1>
 	</div>
 	<div class="list-group">
-	  <a th:each="algorithm : ${algorithms}" class="list-group-item" th:text="${algorithm.name}" th:href="@{/serp_task(algorithm_id=${algorithm.algorithmId})}"></a>
+	  <a th:each="algorithm : ${algorithms}" class="list-group-item col-md-4 col-sm-6 col-xs-12" th:text="${algorithm.name}" th:href="@{/serp_task(algorithm_id=${algorithm.algorithmId})}"></a>
 	</div>
 </div>
 <script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
