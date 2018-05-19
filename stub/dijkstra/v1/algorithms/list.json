@@ -1,0 +1,50 @@
+[
+  {
+    "algorithm_id": 0,
+    "name": "全探索"
+  },
+  {
+    "algorithm_id": 1,
+    "name": "貪欲法"
+  },
+  {
+    "algorithm_id": 2,
+    "name": "動的計画法"
+  },
+  {
+    "algorithm_id": 3,
+    "name": "プライオリティキュー"
+  },
+  {
+    "algorithm_id": 4,
+    "name": "二分探索木"
+  },
+  {
+    "algorithm_id": 5,
+    "name": "Union-Find木"
+  },
+  {
+    "algorithm_id": 6,
+    "name": "ベルマンフォード法"
+  },
+  {
+    "algorithm_id": 7,
+    "name": "ダイクストラ法"
+  },
+  {
+    "algorithm_id": 8,
+    "name": "ワーシャルフロイド法"
+  },
+  {
+    "algorithm_id": 9,
+    "name": "プリム法"
+  },
+  {
+    "algorithm_id": 10,
+    "name": "クラスカル法"
+  },
+  {
+    "algorithm_id": 11,
+    "name": "ユークリッドの互除法"
+  }
+]
