@@ -1,64 +1,28 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        dijkstra-web
-      </h1>
-      <h2 class="subtitle">
-        web component for projectdijkstra
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+  <div>
+    <navigation/>
+    <div class="container">
+	    <div class="page-header">
+	    	<h1>Project Dijkstra</h1>
+	    </div>
+	    <p>Project Dijkstraは、各アルゴリズムに関する例題検索によってアルゴリズム習得への最短経路を提供するサービスです。</p>
+	    <h2>新着情報</h2>
+	    <p>新着情報はありません</p>
+	    <h2>使い方</h2>
+	    <p>ページ上部の「Algorithm」をクリックし、例題を探したいアルゴリズムを探してください。</p>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import Navigation from '~/components/Navigation.vue'
 
 export default {
   components: {
-    AppLogo
+    Navigation
   }
 }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
