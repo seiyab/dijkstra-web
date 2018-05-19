@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="page-header">
+    <div class="pb-2 mt-4 mb-2 border-bottom">
       <h1>アルゴリズムから問題を探す</h1>
     </div>
     <div class="list-group">
@@ -16,13 +16,9 @@
 </template>
 
 <script>
-import Navigation from '~/components/Navigation.vue'
 import axios from 'axios'
 
 export default {
-  components: {
-    Navigation
-  },
   async asyncData () {
     const algorithms = await axios.get('http://localhost:8080/algorithms/list').then(({data}) => data)
     return {
