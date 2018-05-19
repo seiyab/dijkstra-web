@@ -35,7 +35,18 @@ module.exports = {
       }
     }
   },
+  env: {
+    NODE_ENV: process.env.NODE_ENV
+  },
   modules: [
     'bootstrap-vue/nuxt'
-  ]
+  ],
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        path: '',
+        component: resolve(__dirname, 'pages/algorithms.vue')
+      })
+    }
+  }
 }
