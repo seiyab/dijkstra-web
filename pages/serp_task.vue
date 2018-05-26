@@ -10,14 +10,18 @@
     <table v-if="tasks.length > 0" class="table table-hover">
       <thead>
         <tr>
-          <th scope="col">コンテスト</th>
-          <th scope="col">問題</th>
+          <!--<th scope="col" class="col-xs-8 col-sm-4 col-md-3">コンテスト</th>
+          <th scope="col" class="col-xs-4 col-sm-8 col-md-9">問題</th>-->
+          <th scope="col" class="contest">コンテスト</th>
+          <th scope="col" class="task">問題</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="task in tasks" @click="open(task.url)">
-          <td v-text="task.contest"></td>
-          <td v-text="task.task"></td>
+          <!--<td v-text="task.contest" class="col-xs-8 col-sm-4 col-md-3"></td>
+          <td v-text="task.task" class="col-xs-4 col-sm-8 col-md-9"></td>-->
+          <td v-text="task.contest" class="contest"></td>
+          <td v-text="task.task" class="task"></td>
         </tr>
       </tbody>
     </table>
@@ -58,4 +62,50 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  th.contest {
+    width: 50%;
+  }
+
+  th.task {
+    width: 50%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  th.contest {
+    width: 40%;
+  }
+
+  th.task {
+    width: 60%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  th.contest {
+    width: 30%;
+  }
+
+  th.task {
+    width: 70%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  th.contest {
+    width: 25%;
+  }
+
+  th.task {
+    width: 75%;
+  }
+}
+</style>
 
