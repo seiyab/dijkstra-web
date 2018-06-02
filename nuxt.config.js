@@ -1,3 +1,5 @@
+const express = require('express')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -33,6 +35,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      config.node = {fs: 'empty'}
     }
   },
   env: {
@@ -47,6 +50,12 @@ module.exports = {
         path: '',
         component: resolve(__dirname, 'pages/algorithms.vue')
       })
+    },
+  },
+  serverMiddleware: [
+    {
+      path: 'stub',
+      handler: express.static('stub', {extensions: ['json']})
     }
-  }
+  ]
 }

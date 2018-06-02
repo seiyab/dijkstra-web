@@ -1,10 +1,10 @@
 export default {
   dijkstra: {
-    domain: 'http://localhost:8888',
+    domain: 'http://localhost:3000',
     endpoint: {
-      algorithmList: '/dijkstra/v1/algorithms/list',
-      algorithm: '/dijkstra/v1/algorithms/index',
-      tasks: '/dijkstra/v1/tasks'
+      algorithmList: '/stub/dijkstra/v1/algorithms/list',
+      algorithm: '/stub/dijkstra/v1/algorithms/index',
+      tasks: '/stub/dijkstra/v1/tasks'
     }
   }
 }
